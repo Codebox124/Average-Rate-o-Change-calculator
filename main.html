@@ -53,7 +53,8 @@
             cursor: pointer;
             font-size: 16px;
         }
-        .reset button{
+
+        .reset button {
             background-color: red;
             margin: 20px 0;
         }
@@ -84,36 +85,36 @@
     <div class="calculator">
         <h2>Average Rate Calculator</h2>
         <div class="input-group">
-         
+
             <input class="hhh" type="number" id="x1" placeholder="X1">
         </div>
         <div class="input-group">
-           
-            <input class="hhh" type="number" id="y1" placeholder="F(X1)" >
+
+            <input class="hhh" type="number" id="y1" placeholder="F(X1)">
         </div>
         <div class="input-group">
-            
-            <input class="hhh" type="number"  id="x2" placeholder="X2">
+
+            <input class="hhh" type="number" id="x2" placeholder="X2">
         </div>
         <div class="input-group">
-           
-            <input class="hhh" type="number"   id="y2" placeholder="F(X2)">
+
+            <input class="hhh" type="number" id="y2" placeholder="F(X2)">
         </div>
         <button onclick='calculate()' id="calculate">Calculate</button>
         <div class="result">
             <p>You will have:</p>
             <h3 id="result">$0.00</h3>
-            
+
         </div>
         <div class="reset">
             <button onclick="reset()" id="reset">Reset</button>
         </div>
     </div>
     <script>
-       
-        
+
+
         function calculate(e) {
-           
+
 
             event.preventDefault();
 
@@ -124,14 +125,14 @@
             const input = document.getElementsByClassName('hhh')
             const A = (y2 - y1) / (x2 - x1);
 
-                document.getElementById("result").textContent = A;
+            document.getElementById("result").textContent = A;
 
-              
+
 
 
         }
-        
-        
+
+
     </script>
 </body>
 
